@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main id="login-main">
+    <div class="form-wrapper" id="form-login">
+        <h1 class="form-title">Sign in</h1>
+        <form action="index.php" method="post">
+
+            <div class="form-element">
+                <label for="username">Username</label>
+                <input class="form-inputbox" type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input class="form-inputbox" type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-checkbox">
+                <input type="checkbox" name="remeber">
+                <label for="remeber">Remember me</label>
+            </div>
+            
+            <div class="form-buttons">
+                <input class="button" type="submit" value="Sign in">
+                <a href="register.html">
+                    <button class="button" type="button" >Create account</button>
+                </a>
+            </div>
+
+        </form>
+    </div>
+    </main>
+
+</body>
+
+</html>

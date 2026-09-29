@@ -1,0 +1,146 @@
+* {
+    font-family: Helvetica;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#login-main {
+    display: flex;
+    min-height: 100dvh;
+    align-items: center;
+}
+
+#register-main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    align-items: center;
+}
+
+/* 
+    FORMS
+*/
+
+.form-wrapper {
+    display: flex;
+    width: 560px;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 25px;
+    padding: 40px 50px;
+    justify-content: space-between;
+    .form-title {
+        font-size: 36px;
+    }
+    label {
+        font-size: 18px;
+    }
+}
+
+.form-has-footer {
+    margin: auto auto 0 auto;
+}
+.form-footer {
+    margin: 10px 0 auto 0;
+    span {
+        color: grey;
+    }
+    a:link,
+    a:visited {
+        text-decoration-color: grey;
+    }
+}
+
+.form-element, .form-element-wide {
+    display: grid;
+    margin-top: 10px;
+    .form-inputbox {
+        height: 26px;
+        padding: 4px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        outline: none;
+        font-size: 18px;
+    }
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-evenly;
+
+    .button {
+        margin: 20px 10px;
+        border-width: 1px;
+        border-radius: 26px;
+        padding: 10px 20px;
+        background: none;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
+
+.form-checkbox {
+    display: flex;
+    margin-top: 5px;
+    label {
+        margin-left: 4px;
+        align-self: center;
+        font-size: 14px;
+    }
+    input {
+        zoom: 1.5;
+        margin-left: 0;
+        cursor: pointer;
+    }
+}
+
+#form-login {
+    form {
+        padding-top: 20px;
+    }
+    .form-title {
+        padding-top: 20px;
+    }
+    .form-inputbox {
+        width: 280px;
+    }
+} 
+
+#form-register {
+    flex-direction: column;
+
+    .form-title {
+        text-align: center;
+    }
+    .form-element-group {
+        display: flex;
+        justify-content: space-between;
+
+        .form-inputbox {
+            width: 260px;
+        }
+    }
+    .form-element-wide {
+        .form-inputbox {
+            width: 548px;
+        }
+    }
+    .form-buttons {
+        padding: 0 40px;
+    }
+    select {
+        width: 272px;
+        height: 38px;
+        border: 1px solid #8f8f9d;
+        border-radius: 2px;
+        background: none;
+        padding: 4px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        outline: none;
+        font-size: 18px;
+    }
+}

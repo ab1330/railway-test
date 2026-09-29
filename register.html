@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create An Account</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main id="register-main">
+        <div class="form-wrapper form-has-footer" id="form-register">
+            <h1 class="form-title">Create an account</h1>
+            <form action="index.php" method="post">
+
+                <div class="form-element-group">
+                    <div class="form-element">
+                        <label for="first-name">First name</label>
+                        <input class="form-inputbox" type="text" id="first-name" name="first-name" required>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="last-name">Last name</label>
+                        <input class="form-inputbox" type="text" id="last-name" name="last-name">
+                    </div>
+                </div>
+
+                <div class="form-element-group">
+                    <div class="form-element">
+                        <label for="bdate">Date of birth</label>
+                        <input class="form-inputbox" type="date" id="bdate" required>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="gender">Gender</label>
+                        <select id="gender" required>
+                            <option value="" disabled selected>Choose an option</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="not">Prefer not to say</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-element-group">
+                    <div class="form-element">
+                        <label for="username">Username</label>
+                        <input class="form-inputbox" type="text" id="username" name="username" required>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="password">Password</label>
+                        <input class="form-inputbox" type="password" id="password" name="password" required>
+                    </div>
+                </div>
+
+                <div class="form-element-wide">
+                    <label for="email">Email address</label>
+                    <input class="form-inputbox" type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-checkbox">
+                    <input type="checkbox" name="terms-agreement" required>
+                    <label for="terms-agreement">I agree to the Terms of service and the Privacy policy</label>
+                </div>
+                
+                <div class="form-buttons">
+                    <a href="index.html">
+                        <button class="button" type="button">Cancel</button>
+                    </a>
+                    <input class="button" type="submit" value="Create account"></input>
+                </div>
+
+            </form>
+            
+        </div>
+
+        <div class="form-footer">
+            <a href="login.html">
+                <span>I already have an account</span>
+            </a>
+        </div>
+
+        </main>
+    </body>
+</html>
